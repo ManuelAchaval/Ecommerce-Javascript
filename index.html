@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="principal.css">
+    <title>Entrega Final E-Commerce</title>
+</head>
+
+<body id="cuerpo" class="container p-3 w-75">
+    <main class="shadow-lg p-3 mb-5  rounded">
+        <div id="titulo"class=" d-flex p-3 w-100 text-dark colorTitulo rounded-bottom justify-content-center ">
+            <h1>¡Bienvenidos al Mercat de CoderHouse!</h1>
+        </div>
+
+        <div id="listaCompra" class="d-flex flex-column justify-content-center flex-wrap gap-3">
+            <h3 style="text-decoration: underline;">Nuestros productos son:</h3>
+            <button id="mostrar" class="btn btn-primary w-50 align-self-center">Mostrar Productos</button>
+            <button id="ocultar" class="btn btn-primary w-50 align-self-center">Ocultar</button>
+            <div class="d-flex flex-column align-self-center gap-3">
+                <ul id="lista1" style="display: none;" class="list-group list-group-flush">
+                    <li id="yerba" class="list-group-item shadow p-3 mb-5 rounded colorProductos ">
+                        <div class=" d-flex flex-row justify-content-evenly">
+                            <img src="multimedia/yerbamate.jpg" alt="Yerba" class="w-25 p-3">
+                            <p class="align-self-center me-3">YERBA</p>
+                            <div class="d-flex flex-column justify-content-evenly">
+                                <p> Precio: $420</p>
+                                <button id="agregarYerba" class="btn btn-primary rounded-pill my-3">Agregar</button>
+                                <button id="quitarYerba" class="btn btn-primary rounded-pill">Quitar</button>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="list-group-item shadow p-3 mb-5 bg-body rounded colorProductos " id="cafe">
+                        <div class="d-flex flex-row justify-content-evenly">
+                            <img src="multimedia/cafe.jpg" alt="café" class="w-25 p-3">
+                            <p class="align-self-center">CAFE</p>
+                            <div class="d-flex flex-column justify-content-evenly">
+                                <p>Precio: $590</p>
+                                <button id="agregarCafe" class="btn btn-primary rounded-pill my-3">Agregar</button>
+                                <button id="quitarCafe" class="btn btn-primary rounded-pill">Quitar</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item shadow p-3 mb-5 bg-body rounded colorProductos " id="harina">
+                        <div class="d-flex flex-row justify-content-evenly">
+                            <img src="multimedia/harina.jpg" alt="Harina" class="w-25 p-3">
+                            <p class="align-self-center">HARINA</p>
+                            <div class="d-flex flex-column justify-content-evenly">
+                                <p>Precio: $100</p>
+                                <button id="agregarHarina" class="btn btn-primary rounded-pill my-3">Agregar</button>
+                                <button id="quitarHarina" class="btn btn-primary rounded-pill">Quitar</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item shadow p-3 mb-5 bg-body rounded colorProductos " id="palmitos">
+                        <div class="d-flex flex-row justify-content-evenly">
+                            <img src="multimedia/palmitos.jpg" alt="Palmitos" class="w-25 p-3">
+                            <p class="align-self-center">PALMITOS</p>
+                            <div class="d-flex flex-column justify-content-evenly">
+                                <p>Precio: $135</p>
+                                <button id="agregarPalmitos" class="btn btn-primary rounded-pill my-3">Agregar</button>
+                                <button id="quitarPalmitos" class="btn btn-primary rounded-pill">Quitar</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item shadow p-3 mb-5 bg-body rounded colorProductos " id="mermelada">
+                        <div class="d-flex flex-row justify-content-evenly">
+                            <img src="multimedia/mermelada.png" alt="Mermelada" class="w-25 p-3"> 
+                            <p class="align-self-center pe-3">MERMELADA</p>
+                            <div class="d-flex flex-column justify-content-evenly">
+                                <p>Precio: $237</p>
+                                <button id="agregarMermelada" class="btn btn-primary rounded-pill my-3">Agregar</button>
+                                <button id="quitarMermelada" class="btn btn-primary rounded-pill">Quitar</button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        </div>
+        <div><button id="precioTotal" class="btn btn-primary">Calcular precio Total</button></div>
+
+        <div id="queCompre" class="pt-3" >
+            <h3>Tus compras fueron: </h3>
+            <ul id="listaCompras" class="shadow p-3 mb-5 bg-body rounded" aria-placeholder="Vacio"></ul>
+        </div>
+        <div><button id="limpiarCarrito" class="btn btn-light">Limpiar</button></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="main.js"></script>
+    </main>
+</body>
+
+</html>

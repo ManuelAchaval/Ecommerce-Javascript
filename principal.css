@@ -1,0 +1,52 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+body {
+    background-color: #7fd2e2;
+}
+
+main {
+    margin: 1%;
+    padding: 1%;
+    font-family: Montserrat;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+footer {
+    text-align: center;
+    border-bottom: transparent;
+    padding: 1%;
+}
+
+footer img {
+    max-width: 2%;
+}
+
+p{
+    background-color:transparent ;
+}
+
+.colorProductos{
+background: linear-gradient(to bottom, rgb(164, 219, 254), rgb(178, 230, 247));
+}
+
+.colorTitulo{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "nombre": "YERBA",
+        "precio": 420,
+        "stock": 0
+    },
+    {
+        "nombre": "MERMELADA",
+        "precio": 237,
+        "stock": 0
+    },
+    {
+        "nombre": "PALMITOS",
+        "precio": 135,
+        "stock": 0
+    },
+    {
+        "nombre": "CAFE",
+        "precio": 590,
+        "stock": 0
+    },
+    {
+        "nombre": "HARINA",
+        "precio": 100,
+        "stock": 0
+    }
+]
